@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-class Home_Four_Steps extends Component {
+class ThreeColumns extends Component {
   state = {};
   render() {
     return (
       <>
-        <h1>Four Steps</h1>
+        <h1>Three columns</h1>
       </>
     );
   }
 }
 
-export default Home_Four_Steps;
+export default ThreeColumns;

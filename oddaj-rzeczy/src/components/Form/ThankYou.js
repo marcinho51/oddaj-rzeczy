@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-class Form_Summary extends Component {
+class ThankYou extends Component {
   state = {};
   render() {
     return (
       <>
-        <h1>Form Summary</h1>
+        <h1>Thank You</h1>
       </>
     );
   }
 }
 
-export default Form_Summary;
+export default ThankYou;

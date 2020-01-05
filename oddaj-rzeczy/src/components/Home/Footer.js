@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-class Home_Local extends Component {
+class Footer extends Component {
   state = {};
   render() {
     return (
       <>
-        <h1>Home Local</h1>
+        <h1>Footer</h1>
       </>
     );
   }
 }
 
-export default Home_Local;
+export default Footer;

@@ -1,6 +1,8 @@
 @import "reset";
 @import "fonts";
 @import "colors";
+@import "grid";
+@import "components/home";
 
 body {
   font-family: $font-base;

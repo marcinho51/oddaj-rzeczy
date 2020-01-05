@@ -1,0 +1,22 @@
+// Logging
+
+// Navigation
+
+ul {
+  li {
+    display: inline-block;
+    margin: 0 1rem;
+    a {
+      color: $color-black;
+      text-decoration: none;
+    }
+  }
+}
+
+// Header
+
+.headerImage {
+  background-image: url("../../assets/Home-Hero-Image.jpg");
+  background-size: cover;
+  height: 20rem;
+}

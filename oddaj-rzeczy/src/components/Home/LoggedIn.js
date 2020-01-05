@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-class Form_Thank_You extends Component {
+class LoggedIn extends Component {
   state = {};
   render() {
     return (
       <>
-        <h1>Form Thank You</h1>
+        <h1>Home logged in</h1>
       </>
     );
   }
 }
 
-export default Form_Thank_You;
+export default LoggedIn;

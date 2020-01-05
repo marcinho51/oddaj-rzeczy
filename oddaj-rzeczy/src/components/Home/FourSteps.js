@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-class Home_Header extends Component {
+class FourSteps extends Component {
   state = {};
   render() {
     return (
       <>
-        <h1>Header</h1>
+        <h1>Four Steps</h1>
       </>
     );
   }
 }
 
-export default Home_Header;
+export default FourSteps;

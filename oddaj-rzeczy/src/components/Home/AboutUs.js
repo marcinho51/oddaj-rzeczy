@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-class Home_Three_Columns extends Component {
+class AboutUs extends Component {
   state = {};
   render() {
     return (
       <>
-        <h1>Three columns</h1>
+        <h1>About us</h1>
       </>
     );
   }
 }
 
-export default Home_Three_Columns;
+export default AboutUs;

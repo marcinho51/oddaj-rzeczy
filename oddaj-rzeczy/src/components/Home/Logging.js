@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Logging extends Component {
   state = {};
@@ -6,9 +7,13 @@ class Logging extends Component {
     return (
       <div class="row">
         <div class="col-10"></div>
-        <div class="col-4">
-          <button>Zaloguj</button>
-          <button>Załóż konto</button>
+        <div class="loggingButtons col-4">
+          <button>
+            <Link to="/logowanie">Zaloguj</Link>
+          </button>
+          <button>
+            <Link to="/rejestracja">Załóż konto</Link>
+          </button>
         </div>
         <div class="col-2"></div>
       </div>

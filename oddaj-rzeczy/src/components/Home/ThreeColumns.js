@@ -4,9 +4,42 @@ class ThreeColumns extends Component {
   state = {};
   render() {
     return (
-      <>
-        <h1>Three columns</h1>
-      </>
+      <div class="row threeColumns">
+        <div class="col-1"></div>
+        <div class="col-4">
+          <div class="columnInformation">
+            <h1>10</h1>
+            <h5>oddanych worków</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
+              dolor est. Curabitur tempus felis.
+            </p>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-4">
+          <div class="columnInformation">
+            <h1>5</h1>
+            <h5>wspartych organizacji</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
+              dolor est. Curabitur tempus felis.
+            </p>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-4">
+          <div class="columnInformation">
+            <h1>7</h1>
+            <h5>zorganizowanych zbiórek</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu
+              dolor est. Curabitur tempus felis.
+            </p>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
     );
   }
 }

@@ -8,9 +8,9 @@ import Step1 from "./components/Steps/Step1";
 // import Form_Step_4 from "./components/Steps/Step4";
 // import Form_Summary from "./components/Form/Summary";
 // import Form_Thank_You from "./components/Form/ThankYou";
-import Login from "./components/Registration/Login";
-import Register from "./components/Registration/Register";
-import Logout from "./components/Registration/Logout";
+import Login from "./components/RegisteringAndLogging/Login";
+import Register from "./components/RegisteringAndLogging/Register";
+import Logout from "./components/RegisteringAndLogging/Logout";
 
 function App() {
   return (

@@ -230,3 +230,90 @@ ul {
     }
   }
 }
+
+// Contact
+
+.contact {
+  .contactImg {
+    background-image: url("../../assets/Background-Contact-Form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    height: 40rem;
+  }
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+    .decorationImage5 {
+      background-image: url("../../assets/Decoration.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 4rem;
+      margin-top: 0.5rem;
+      width: 13rem;
+    }
+    form {
+      label {
+        font-size: 0.7rem;
+      }
+      input {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-bottom: 1px solid $color-grey;
+        margin-bottom: 1rem;
+        width: 90%;
+        &::placeholder {
+          opacity: 0.3;
+        }
+      }
+      textarea {
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-bottom: 1px solid grey;
+        height: 3rem;
+        opacity: 0.3;
+        width: 100%;
+      }
+      input[type="submit"] {
+        background-color: white;
+        border: 1px solid black;
+        display: inline-block;
+        height: 2rem;
+
+        width: 5rem;
+      }
+    }
+  }
+}
+
+// Footer
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 2rem;
+  p {
+    font-size: 0.6rem;
+  }
+  .footerIcons {
+    .footerFacebook {
+      background-image: url("../../assets/Facebook.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      height: 1rem;
+    }
+    .footerInstagram {
+      background-image: url("../../assets/Instagram.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      height: 1rem;
+    }
+  }
+}

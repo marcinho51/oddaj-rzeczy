@@ -4,9 +4,19 @@ class Footer extends Component {
   state = {};
   render() {
     return (
-      <>
-        <h1>Footer</h1>
-      </>
+      <section className="footer">
+        <div className="row">
+          <div className="col-7"></div>
+          <div className="col-2">
+            <p>Copyright by Coders Lab</p>
+          </div>
+          <div className="col-5"></div>
+          <div className="footerIcons col-2">
+            <div className="footerFacebook"></div>
+            <div className="footerInstagram"></div>
+          </div>
+        </div>
+      </section>
     );
   }
 }

@@ -7,7 +7,7 @@ class Logging extends Component {
     return (
       <div class="row">
         <div class="col-10"></div>
-        <div class="loggingButtons col-4">
+        <div class="loggingButtons col-5">
           <button>
             <Link to="/logowanie">Zaloguj</Link>
           </button>
@@ -15,7 +15,7 @@ class Logging extends Component {
             <Link to="/rejestracja">Załóż konto</Link>
           </button>
         </div>
-        <div class="col-2"></div>
+        <div class="col-1"></div>
       </div>
     );
   }

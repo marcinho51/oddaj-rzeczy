@@ -16,8 +16,8 @@ class Header extends Component {
             <div class="col-3"></div>
             <div class="headerMain col-9">
               <div class="headerHeadline">
-                <h3>Zacznij pomagać!</h3>
-                <h3>Oddaj niechciane rzeczy w zaufane ręce</h3>
+                <h1>Zacznij pomagać!</h1>
+                <h1>Oddaj niechciane rzeczy w zaufane ręce</h1>
               </div>
               <div class="decorationImage1"></div>
               <div class="headerButtons">

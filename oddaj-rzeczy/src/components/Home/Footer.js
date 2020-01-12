@@ -11,10 +11,11 @@ class Footer extends Component {
             <p>Copyright by Coders Lab</p>
           </div>
           <div className="col-5"></div>
-          <div className="footerIcons col-2">
+          <div className="footerIcons col-1">
             <div className="footerFacebook"></div>
             <div className="footerInstagram"></div>
           </div>
+          <div className="col-1"></div>
         </div>
       </section>
     );

@@ -14,7 +14,7 @@ class Register extends Component {
             <Navigation />
           </div>
         </div>
-        <div className="registerDiv row">
+        <div className="registerDiv">
           <h1>Załóż konto</h1>
           <div className="decorationImage7"></div>
           <div className="registerForm">

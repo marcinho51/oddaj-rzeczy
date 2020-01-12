@@ -14,7 +14,7 @@ class Login extends Component {
             <Navigation />
           </div>
         </div>
-        <div className="loginDiv row">
+        <div className="loginDiv">
           <h1>Zaloguj się</h1>
           <div className="decorationImage6"></div>
           <div className="loginForm">

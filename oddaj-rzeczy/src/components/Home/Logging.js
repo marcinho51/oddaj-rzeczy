@@ -5,9 +5,9 @@ class Logging extends Component {
   state = {};
   render() {
     return (
-      <div class="row">
-        <div class="col-10"></div>
-        <div class="loggingButtons col-5">
+      <div className="row">
+        <div className="col-10"></div>
+        <div className="loggingButtons col-5">
           <button>
             <Link to="/logowanie">Zaloguj</Link>
           </button>
@@ -15,7 +15,7 @@ class Logging extends Component {
             <Link to="/rejestracja">Załóż konto</Link>
           </button>
         </div>
-        <div class="col-1"></div>
+        <div className="col-1"></div>
       </div>
     );
   }

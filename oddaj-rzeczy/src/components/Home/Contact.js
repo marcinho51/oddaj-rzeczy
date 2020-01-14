@@ -127,7 +127,8 @@ class Contact extends Component {
                 <div className="col-16">
                   <label>
                     Wpisz swoją wiadomość
-                    <textarea
+                    <input
+                      type="text"
                       style={
                         this.state.messageValidation
                           ? { borderBottom: "1px solid $color-grey" }

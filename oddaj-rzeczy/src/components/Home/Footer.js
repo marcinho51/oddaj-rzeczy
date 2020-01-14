@@ -14,6 +14,9 @@ class Footer extends Component {
           <div className="footerIcons col-1">
             <div className="footerFacebook"></div>
             <div className="footerInstagram"></div>
+            {/* <a href="https//www.facebook.com">
+              <img src="../../assets/Facebook.svg"/>
+            </a> */}
           </div>
           <div className="col-1"></div>
         </div>

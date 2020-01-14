@@ -1,5 +1,10 @@
 import React, { Component } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
+const options = {
+  duration: 500,
+  activeClass: "active"
+};
 class Navigation extends Component {
   state = {};
   render() {
@@ -11,20 +16,30 @@ class Navigation extends Component {
             <nav>
               <ul>
                 <li>
-                  <a href="#">Start</a>
+                  <ScrollLink to="header" {...options}>
+                    <a href="#">Start</a>
+                  </ScrollLink>
                 </li>
                 <li>
-                  <a href="#">O co chodzi?</a>
+                  <ScrollLink to="fourSteps" {...options}>
+                    <a href="#">O co chodzi?</a>
+                  </ScrollLink>
                 </li>
                 <li>
-                  <a href="#">O nas</a>
+                  <ScrollLink to="aboutUs" {...options}>
+                    <a href="#">O nas</a>
+                  </ScrollLink>
                 </li>
                 <li>
-                  <a href="#">Fundacja i organizacje</a>
+                  <ScrollLink to="whoDoWeHelp" {...options}>
+                    <a href="#">Fundacja i organizacje</a>
+                  </ScrollLink>
                 </li>
 
                 <li>
-                  <a href="#">Kontakt</a>
+                  <ScrollLink to="contact" {...options}>
+                    <a href="#">Kontakt</a>
+                  </ScrollLink>
                 </li>
               </ul>
             </nav>

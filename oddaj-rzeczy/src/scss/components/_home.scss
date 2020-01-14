@@ -286,15 +286,20 @@
           opacity: 0.3;
         }
       }
-      textarea {
-        border-right: none;
-        border-left: none;
-        border-top: none;
-        border-bottom: 1px solid grey;
-        height: 3rem;
-        opacity: 0.3;
-        width: 100%;
+      input[type="text"] {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
       }
+      // textarea {
+      //   border-right: none;
+      //   border-left: none;
+      //   border-top: none;
+      //   border-bottom: 1px solid grey;
+      //   font-size: 0.9rem;
+      //   height: 3rem;
+      //   opacity: 0.3;
+      //   width: 100%;
+      // }
       input[type="submit"] {
         background-color: white;
         border: 1px solid black;

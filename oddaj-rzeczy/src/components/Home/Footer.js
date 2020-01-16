@@ -13,7 +13,7 @@ class Footer extends Component {
           <div className="col-5"></div>
           <div className="footerIcons col-1">
             <div className="footerFacebook">
-              <a href="https//www.facebook.com">
+              <a href="https://www.facebook.com" target="_blank">
                 <img
                   className="footerLogo"
                   src={require("../../assets/Facebook.svg")}
@@ -22,7 +22,7 @@ class Footer extends Component {
               </a>
             </div>
             <div className="footerInstagram">
-              <a href="https//www.instagram.com">
+              <a href="https://www.instagram.com" target="_blank">
                 <img
                   className="footerLogo"
                   src={require("../../assets/Instagram.svg")}

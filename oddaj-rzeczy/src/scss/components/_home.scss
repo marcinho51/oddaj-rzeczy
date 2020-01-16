@@ -325,21 +325,19 @@
   .footerIcons {
     display: flex;
     justify-content: center;
-    .footerFacebook {
-      background-image: url("../../assets/Facebook.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
+    // .footerFacebook {
 
-      height: 1rem;
-      width: 30%;
-    }
-    .footerInstagram {
-      background-image: url("../../assets/Instagram.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
+    //   height: 1rem;
+    //   width: 30%;
+    // }
+    // .footerInstagram {
 
+    //   height: 1rem;
+    //   width: 30%;
+    // }
+    .footerLogo {
       height: 1rem;
-      width: 30%;
+      margin-right: 0.5rem;
     }
   }
 }

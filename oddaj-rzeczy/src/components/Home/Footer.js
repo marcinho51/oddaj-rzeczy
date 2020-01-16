@@ -12,11 +12,24 @@ class Footer extends Component {
           </div>
           <div className="col-5"></div>
           <div className="footerIcons col-1">
-            <div className="footerFacebook"></div>
-            <div className="footerInstagram"></div>
-            {/* <a href="https//www.facebook.com">
-              <img src="../../assets/Facebook.svg"/>
-            </a> */}
+            <div className="footerFacebook">
+              <a href="https//www.facebook.com">
+                <img
+                  className="footerLogo"
+                  src={require("../../assets/Facebook.svg")}
+                  alt="facebook"
+                />
+              </a>
+            </div>
+            <div className="footerInstagram">
+              <a href="https//www.instagram.com">
+                <img
+                  className="footerLogo"
+                  src={require("../../assets/Instagram.svg")}
+                  alt="instagram"
+                />
+              </a>
+            </div>
           </div>
           <div className="col-1"></div>
         </div>

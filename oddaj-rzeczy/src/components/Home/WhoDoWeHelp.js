@@ -18,14 +18,18 @@ class Home_Who_Do_We_Help extends Component {
   get names() {
     return this.state.fundations.map(fundation => {
       return (
-        <li
-          key={fundation.id}
-          id={fundation.id}
-          onClick={this.handleOnClick}
-          className={this.state.currentOrganisation == fundation.id && "active"}
-        >
-          {fundation.name}
-        </li>
+        <>
+          <li
+            key={fundation.id}
+            id={fundation.id}
+            onClick={this.handleOnClick}
+            className={
+              this.state.currentOrganisation == fundation.id && "active"
+            }
+          >
+            {fundation.name}
+          </li>
+        </>
       );
     });
   }
@@ -47,10 +51,24 @@ class Home_Who_Do_We_Help extends Component {
     console.log(this.state);
     return (
       <section className="whoDoWeHelp">
-        <h1>Who do we help</h1>
-        <ul>{this.names}</ul>
-        Lista
-        <ul>{this.items}</ul>
+        <div className="whoDoWeHelpHeadline">
+          <h1>Komu pomagamy?</h1>
+        </div>
+        <div className="decorationImage4"></div>
+        <div className="row">
+          <div className="col-4"></div>
+          <div className="whoDoWeHelpNav col-8">
+            <ul>{this.names}</ul>
+          </div>
+        </div>
+        <div className="col-4"></div>
+        <div className="row">
+          <div className="col-3"></div>
+          <div className="whoDoWeHelpList col-10">
+            <ul>{this.items}</ul>
+          </div>
+          <div className="col-3"></div>
+        </div>
       </section>
     );
   }

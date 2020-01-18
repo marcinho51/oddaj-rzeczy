@@ -248,6 +248,38 @@
   }
 }
 
+//WhoDoWeHelp
+
+.whoDoWeHelp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  .whoDoWeHelpHeadline {
+  }
+  .decorationImage4 {
+    background-image: url("../../assets/Decoration.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4rem;
+    margin-top: 0.5rem;
+    width: 13rem;
+  }
+  .whoDoWeHelpNav {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        list-style: none;
+        margin: 0 4rem 2rem 4rem;
+        text-align: center;
+      }
+    }
+  }
+  .whoDoWeHelpList {
+  }
+}
+
 // Contact
 
 .contact {

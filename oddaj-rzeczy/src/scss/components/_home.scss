@@ -300,7 +300,8 @@
 
 .active {
   border: 1px solid $color-grey;
-  padding: 0.5rem;
+
+  padding: 0.7rem;
 }
 
 // Contact
@@ -335,16 +336,19 @@
         border-left: none;
         border-top: none;
         border-bottom: 1px solid $color-grey;
-
+        margin-bottom: 1rem;
         width: 90%;
         &::placeholder {
           opacity: 0.3;
         }
       }
+
       input[type="text"] {
         padding-bottom: 1rem;
         padding-top: 1rem;
+        width: 95%;
       }
+
       // textarea {
       //   border-right: none;
       //   border-left: none;
@@ -360,7 +364,7 @@
         border: 1px solid black;
         display: inline-block;
         height: 2rem;
-
+        margin-top: 1rem;
         width: 5rem;
       }
     }

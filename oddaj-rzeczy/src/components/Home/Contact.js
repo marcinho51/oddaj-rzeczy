@@ -125,6 +125,7 @@ class Contact extends Component {
                   </label>
                 </div>
                 <div className="col-16">
+                  {/* <br></br> */}
                   <label>
                     Wpisz swoją wiadomość
                     <input

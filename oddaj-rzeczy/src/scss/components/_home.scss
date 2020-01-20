@@ -270,6 +270,7 @@
       display: flex;
       justify-content: space-around;
       li {
+        cursor: pointer;
         list-style: none;
         margin: 0 4rem 2rem 4rem;
         text-align: center;
@@ -277,7 +278,29 @@
     }
   }
   .whoDoWeHelpList {
+    .fundationMain {
+      border-bottom: 1px solid $color-grey;
+      padding: 1rem 0;
+      width: 100%;
+      .fundationHeader {
+        font-size: 1.2rem;
+      }
+      .fundationDesc {
+        font-size: 0.8rem;
+
+        padding-top: 1rem;
+      }
+      .fundationSubheader {
+        font-size: 0.8rem;
+        font-style: italic;
+      }
+    }
   }
+}
+
+.active {
+  border: 1px solid $color-grey;
+  padding: 0.5rem;
 }
 
 // Contact

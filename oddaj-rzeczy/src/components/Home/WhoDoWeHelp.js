@@ -42,7 +42,16 @@ class Home_Who_Do_We_Help extends Component {
     return (
       fun &&
       fun.items.map(fundation => {
-        return <li>{fundation.header}</li>;
+        return (
+          <div key={fundation.header} className="fundationMain row">
+            <div className="fundationHeader col-7">{fundation.header}</div>
+            <div className="col-6"></div>
+            <div className="fundationDesc col-3">{fundation.desc}</div>
+            <div className="fundationSubheader col-7">
+              {fundation.subheader}
+            </div>
+          </div>
+        );
       })
     );
   }
@@ -60,12 +69,11 @@ class Home_Who_Do_We_Help extends Component {
           <div className="whoDoWeHelpNav col-8">
             <ul>{this.names}</ul>
           </div>
-        </div>
-        <div className="col-4"></div>
-        <div className="row">
+          <div className="col-4"></div>
+
           <div className="col-3"></div>
           <div className="whoDoWeHelpList col-10">
-            <ul>{this.items}</ul>
+            <div>{this.items}</div>
           </div>
           <div className="col-3"></div>
         </div>

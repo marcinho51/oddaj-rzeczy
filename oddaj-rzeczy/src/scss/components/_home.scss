@@ -269,11 +269,23 @@
     ul {
       display: flex;
       justify-content: space-around;
+
       li {
         cursor: pointer;
         list-style: none;
         margin: 0 4rem 2rem 4rem;
         text-align: center;
+        border: 1px solid $color-white;
+        padding: 0.7rem;
+        &:first-of-type {
+          padding: 1.4rem 0.7rem 0.3rem 0.7rem;
+        }
+        &:last-of-type {
+          padding: 0.7rem 1.5rem;
+        }
+      }
+      .active {
+        border: 1px solid $color-grey;
       }
     }
   }
@@ -296,12 +308,6 @@
       }
     }
   }
-}
-
-.active {
-  border: 1px solid $color-grey;
-
-  padding: 0.7rem;
 }
 
 // Contact

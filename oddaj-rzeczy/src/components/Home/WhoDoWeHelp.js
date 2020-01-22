@@ -76,15 +76,22 @@ class Home_Who_Do_We_Help extends Component {
           key={el}
           id={el}
           onClick={this.handleButtonClick}
-          className={this.state.currentPage == el - 1 && "showPagesButton"}
-          // "showPagesButton"
+          className={
+            this.state.currentPage == el - 1
+              ? "activeButton"
+              : "showPagesButton"
+          }
         >
           {el}
         </button>
       );
     });
 
-    console.log(allPages);
+    const description = this.fundations.map(item => {
+      return item.desc;
+    });
+
+    console.log(this.items);
     return (
       <section className="whoDoWeHelp">
         <div className="whoDoWeHelpHeadline">
@@ -98,9 +105,11 @@ class Home_Who_Do_We_Help extends Component {
           </div>
           <div className="col-4"></div>
 
-          {/* <div className="col-4"></div>
-          <div className="col-8">{this.items.desc}</div>
-          <div className="col-4"></div> */}
+          <div className="col-4"></div>
+          <div className="col-8">
+            {description[this.state.currentOrganisation]}
+          </div>
+          <div className="col-4"></div>
 
           <div className="col-3"></div>
           <div className="whoDoWeHelpList col-10">

@@ -308,6 +308,19 @@
       }
     }
   }
+  .showPages {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    .showPagesButton {
+      background-color: $color-white;
+      border: 1px solid $color-grey;
+      cursor: pointer;
+      height: 2.5rem;
+      margin: 0.5rem;
+      width: 1.5rem;
+    }
+  }
 }
 
 // Contact

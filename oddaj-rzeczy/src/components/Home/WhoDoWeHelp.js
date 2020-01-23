@@ -30,7 +30,7 @@ class Home_Who_Do_We_Help extends Component {
             id={fundation.id}
             onClick={this.handleOnClick}
             className={
-              this.state.currentOrganisation == fundation.id && "active"
+              this.state.currentOrganisation == fundation.id ? "active" : null
             }
           >
             {fundation.name}
@@ -87,10 +87,6 @@ class Home_Who_Do_We_Help extends Component {
       );
     });
 
-    const description = this.fundations.map(item => {
-      return item.desc;
-    });
-
     console.log(this.items);
     return (
       <section className="whoDoWeHelp">
@@ -105,11 +101,11 @@ class Home_Who_Do_We_Help extends Component {
           </div>
           <div className="col-4"></div>
 
-          <div className="col-4"></div>
-          <div className="col-8">
-            {description[this.state.currentOrganisation]}
+          <div className="col-5"></div>
+          <div className="whoDoWeHelpDescription col-6">
+            {this.state.fundations[this.state.currentOrganisation - 1]?.desc}
           </div>
-          <div className="col-4"></div>
+          <div className="col-5"></div>
 
           <div className="col-3"></div>
           <div className="whoDoWeHelpList col-10">

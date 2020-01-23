@@ -24,6 +24,8 @@ class Contact extends Component {
   };
 
   checkForm = event => {
+    event.preventDefault();
+
     if (this.state.name.indexOf(" ") !== -1) {
       this.setState({ nameValidation: false });
     }
@@ -56,10 +58,24 @@ class Contact extends Component {
       this.state.email.indexOf(" ") === -1 &&
       this.state.message.length >= 120
     ) {
-      this.setState({ formValidation: true });
+      const { name, email, message } = this.state;
+      fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message
+        })
+      })
+        .then(res => res.json())
+        .then(res => {
+          console.log(res);
+          this.setState({ formValidation: true });
+        });
     }
-
-    event.preventDefault();
   };
 
   render() {
@@ -125,15 +141,19 @@ class Contact extends Component {
                   </label>
                 </div>
                 <div className="col-16">
-                  {/* <br></br> */}
                   <label>
                     Wpisz swoją wiadomość
-                    <input
-                      type="text"
+                    <textarea
                       style={
                         this.state.messageValidation
-                          ? { borderBottom: "1px solid $color-grey" }
-                          : { borderBottom: "1px solid rgba(255,0,0,1)" }
+                          ? {
+                              borderBottom: "1px solid $color-grey",
+                              resize: "none"
+                            }
+                          : {
+                              borderBottom: "1px solid rgba(255,0,0,1)",
+                              resize: "none"
+                            }
                       }
                       value={this.state.message}
                       onChange={this.checkMessage}

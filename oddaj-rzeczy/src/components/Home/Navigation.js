@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const options = {
   duration: 500,
@@ -16,29 +17,27 @@ class Navigation extends Component {
             <nav>
               <ul>
                 <li>
-                  <ScrollLink to="header" {...options}>
-                    <a href="#">Start</a>
-                  </ScrollLink>
+                  <Link to="/">Start</Link>
                 </li>
                 <li>
                   <ScrollLink to="fourSteps" {...options}>
-                    <a href="#">O co chodzi?</a>
+                    O co chodzi?
                   </ScrollLink>
                 </li>
                 <li>
                   <ScrollLink to="aboutUs" {...options}>
-                    <a href="#">O nas</a>
+                    O nas
                   </ScrollLink>
                 </li>
                 <li>
                   <ScrollLink to="whoDoWeHelp" {...options}>
-                    <a href="#">Fundacja i organizacje</a>
+                    Fundacja i organizacje
                   </ScrollLink>
                 </li>
 
                 <li>
                   <ScrollLink to="contact" {...options}>
-                    <a href="#">Kontakt</a>
+                    Kontakt
                   </ScrollLink>
                 </li>
               </ul>

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/oddaj-rzeczy/static/css/main.3afb03cc.chunk.css",
+    "main.js": "/oddaj-rzeczy/static/js/main.f77d0ae4.chunk.js",
+    "main.js.map": "/oddaj-rzeczy/static/js/main.f77d0ae4.chunk.js.map",
+    "runtime-main.js": "/oddaj-rzeczy/static/js/runtime-main.11bfd88b.js",
+    "runtime-main.js.map": "/oddaj-rzeczy/static/js/runtime-main.11bfd88b.js.map",
+    "static/js/2.5cd68d4e.chunk.js": "/oddaj-rzeczy/static/js/2.5cd68d4e.chunk.js",
+    "static/js/2.5cd68d4e.chunk.js.map": "/oddaj-rzeczy/static/js/2.5cd68d4e.chunk.js.map",
+    "index.html": "/oddaj-rzeczy/index.html",
+    "precache-manifest.4b352607a167b2a2a25315b0bc075c95.js": "/oddaj-rzeczy/precache-manifest.4b352607a167b2a2a25315b0bc075c95.js",
+    "service-worker.js": "/oddaj-rzeczy/service-worker.js",
+    "static/css/main.3afb03cc.chunk.css.map": "/oddaj-rzeczy/static/css/main.3afb03cc.chunk.css.map",
+    "static/js/2.5cd68d4e.chunk.js.LICENSE": "/oddaj-rzeczy/static/js/2.5cd68d4e.chunk.js.LICENSE",
+    "static/media/main.scss": "/oddaj-rzeczy/static/media/Signature.e54cfcfc.svg",
+    "static/media/Facebook.svg": "/oddaj-rzeczy/static/media/Facebook.df65b6c0.svg",
+    "static/media/Instagram.svg": "/oddaj-rzeczy/static/media/Instagram.703479fd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11bfd88b.js",
+    "static/js/2.5cd68d4e.chunk.js",
+    "static/css/main.3afb03cc.chunk.css",
+    "static/js/main.f77d0ae4.chunk.js"
+  ]
+}

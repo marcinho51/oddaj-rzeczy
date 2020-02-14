@@ -1,17 +1,37 @@
 import React, { Component } from "react";
 
-class Home_Who_Do_We_Help extends Component {
+class WhoDoWeHelp extends Component {
   state = {
     fundations: [],
     currentOrganisation: 1,
     currentPage: 0,
     itemPerPage: 3
   };
+
+  // componentDidMount() {
+  //   // fetch("http://localhost:3001/fundations")
+  //   fetch("https://api.jsonbin.io/b/5e3711f450a7fe418c585da9/fundations")
+  //     .then(res => res.json())
+  //     .then(fundations => this.setState({ fundations }));
+  // }
+
   componentDidMount() {
-    // fetch("http://localhost:3001/fundations")
-    fetch("https://api.jsonbin.io/b/5e3550373d75894195e2c3ec")
-      .then(res => res.json())
-      .then(fundations => this.setState({ fundations }));
+    const url = "https://api.jsonbin.io/b/5e46f9e4d18e40166178bf33";
+    // const url = "http://localhost:3001/fundations";
+    return fetch(url)
+      .then(res => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          throw new Error("Błąd sieci!");
+        }
+      })
+      .then(fundations => {
+        this.setState({ fundations });
+      })
+      .catch(error => {
+        console.log(error);
+      });
   }
 
   handleOnClick = e => {
@@ -135,4 +155,4 @@ class Home_Who_Do_We_Help extends Component {
   }
 }
 
-export default Home_Who_Do_We_Help;
+export default WhoDoWeHelp;
